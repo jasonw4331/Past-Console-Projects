@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1407585581 source:c:\documents and settings\jason\desktop\c++\videos\temper test\main.cpp
+	<iostream>
+
+1410773879 source:c:\documents and settings\jason\desktop\c++\personal projects\temper test\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cstdlib>
+	<windows.h>
+

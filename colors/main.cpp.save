@@ -1,0 +1,50 @@
+#include <iostream>
+#include <stdlib.h>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+    char color;
+
+    cout << "press the number coordinated with the color\n\n";
+    system("color j3");
+    system("pause");
+    cin >> color;
+    system("CLS");
+    switch(color){
+    case 00:
+        system("color 00");
+    break;
+    case :
+        system("color 01");
+    break;
+    case 02:
+        system("color 02");
+    break;
+    case 03:
+        system("color 03");
+    break;
+    case 04:
+        system("color 04");
+    break;
+    case 05:
+        system("color 05");
+    break;
+    case 06:
+        system("color 06");
+    break;
+    case 07:
+        system("color 07");
+    break;
+    case 08:
+        system("color 00");
+    break;
+    case 09:
+        system("color 00");
+    break;
+    //case 0A:
+
+  //  break;
+}}

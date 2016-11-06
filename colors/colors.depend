@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1408118325 source:c:\documents and settings\jason\desktop\c++\personal projects\colors\main.cpp
+	<iostream>
+	<stdlib.h>
+	<windows.h>
+

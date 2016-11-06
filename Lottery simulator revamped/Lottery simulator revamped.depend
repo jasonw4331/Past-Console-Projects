@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1412332579 source:c:\documents and settings\jason\desktop\c++\personal projects\lottery simulator revamped\main.cpp
+	<iostream>
+	<cstdlib>
+	<windows.h>
+	<ctime>
+

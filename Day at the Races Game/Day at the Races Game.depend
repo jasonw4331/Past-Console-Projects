@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1417654543 source:c:\documents and settings\jason\desktop\c++\personal projects\day at the races game\main.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+	<cctype>
+

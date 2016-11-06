@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1415754325 source:c:\documents and settings\jason\desktop\c++\personal projects\game list creator\main.cpp
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+	<iterator>
+

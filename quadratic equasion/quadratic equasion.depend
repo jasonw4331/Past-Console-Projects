@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1411603095 source:c:\documents and settings\jason\desktop\c++\personal projects\quadratic equasion\main.cpp
+	<iostream>
+	<string>
+	<iomanip>
+	<cmath>
+	<windows.h>
+	"Quadratic.h"
+
+1411602983 c:\documents and settings\jason\desktop\c++\personal projects\quadratic equasion\quadratic.h
+	<iostream>
+	<string>
+	<iomanip>
+

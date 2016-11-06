@@ -1,0 +1,35 @@
+#include <iostream>
+#include <windows.h>
+#include <cstdlib>
+using namespace std;
+string list2[]={"Pickles","Milk","OJ","Apples","Bananas","Grapes","Tomatoes","Carrots","Celery","Peanut Butter","Ice Cream","Cereal","Eggs","Egg Nog","Cheese"};
+void list1()
+{
+    cout <<"\t\tList:"<<endl<<endl
+         <<"\t     Pickles"<<endl
+         <<"\t     Milk"<<endl
+         <<"\t     Orange Juice"<<endl
+         <<"\t     Apples"<<endl
+         <<"\t     Bananas"<<endl
+         <<"\t     Grapes"<<endl
+         <<"\t     Tomatoes"<<endl
+         <<"\t     Carrots"<<endl
+         <<"\t     Celery"<<endl
+         <<"\t     Peanut Butter"<<endl
+         <<"\t     Ice Cream"<<endl
+         <<"\t     Cereal"<<endl
+         <<"\t     Eggs"<<endl
+         <<"\t     Egg Nog"<<endl
+         <<"\t     Cheese"<<endl;
+}
+int main()
+{
+    cout <<"\t\t\t\tWelcome To Shopping Simulator!" <<endl
+         <<"\t\t\t\t         (For Moms)           " <<endl;
+    srand(rand());
+    Rand();
+    system("pause"); system("cls");
+    cout <<"\t\tList:"<<endl<<endl;
+    for(int a=0;a!=5;a++){
+    cout<<"\t     "<<list2[a]<<endl;}
+}

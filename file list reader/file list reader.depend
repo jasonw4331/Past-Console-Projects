@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1411676186 source:c:\documents and settings\jason\desktop\c++\personal projects\file list reader\main.cpp
+	<fstream>
+	<iostream>
+	<sstream>
+	<vector>
+	<string>
+	<algorithm>
+	<iterator>
+

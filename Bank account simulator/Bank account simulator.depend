@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1416356039 source:c:\documents and settings\jason\desktop\c++\personal projects\bank account simulator\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	<cstdlib>
+	<string.h>
+	<windows.h>
+	<sstream>
+

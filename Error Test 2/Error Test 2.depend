@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1418690630 source:c:\documents and settings\jason\desktop\c++\personal projects\error test 2\main.cpp
+	<iostream>
+	<iomanip>
+	<cctype>
+	<string>
+	<windows.h>
+	<algorithm>
+

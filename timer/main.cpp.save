@@ -1,0 +1,37 @@
+#include <iostream>
+#include <windows.h>
+#include <cstdlib>
+#include <ctime>
+#include <vector>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+    int a=0;
+    int b=0;
+    int d=0;
+    cout << "Enter how long that you want this timer to run\n";
+    cout << "Remember, 1800 is 30 minutes       "
+    cin >> a;
+    system("cls");
+    b=a+time(0);
+
+                //loop does end
+        while(b!=time(0)){
+        system("color 0c");
+        cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                  " << a << endl;
+        Sleep(1000);
+        system("cls ");
+        a--;
+}
+        system("color 1f");
+        while(d!=1){cout << "TIMER COMPLETE!\n";
+        Sleep(1000);
+        system("cls");
+        cout << "Hit the SpaceBar!";
+        Sleep(500);
+        system("cls");
+        if(GetAsyncKeyState(VK_SPACE)){d=1;}
+        }
+}

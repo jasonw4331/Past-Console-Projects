@@ -1,0 +1,84 @@
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <math.h>
+#include <cctype>
+#include <string>
+using namespace std;
+string morse_codes[]=
+{
+  ".-",    "-...",  "-.-.",  "-..",   ".",     /// A-E
+  "..-.",  "--.",   "....",  "..",    ".---",  /// F-J
+  "-.-",   ".-..",  "--",    "-.",    "---",   /// K-O
+  ".--.",  "--.-",  ".-.",   "...",   "-",     /// P-T
+  "..-",   "...-",  ".--",   "-..-",  "-.--",  /// U-Y
+  "--..",                                      /// Z
+  "-----", ".----", "..---", "...--", "....-", /// 0-4
+  ".....", "-....", "--...", "---..", "----.", /// 5-9
+};
+string texttomorse(char l)
+{string result;
+  for (int i = 0; i < s.length(); i++)
+  {
+    result += // convert s[ i ] to a morse sequence. (Hint: use a function!)
+    result += ' ';
+  }
+  return result.substr( 0, result.length() - 1 );  // (skip the last space)
+}
+string texttomorse1( char letter_or_digit )
+{
+  // Is it a letter?
+  if (isalpha( letter_or_digit ))
+    // Yes. Convert the letter to uppercase and find it's difference with 'A' to index the correct Morse sequence.
+    return morse_codes[ toupper( letter_or_digit ) - 'A' ];
+
+  // Is it a digit?
+  if (isdigit( letter_or_digit ))
+    // Yes. Find the difference between it an '0' and don't forget the offset in the table of the digits.
+    return morse_codes[ 26 + letter_or_digit - '0' ];
+
+  // It is not a letter or a digit, so it turns into... nothing!
+  return ""
+}
+string morsetotext(char l)
+{int i = index of s in morse[];  // you can figure out how to do this! (hint: use a loop)
+
+  // Was it a letter?
+  if (i < 26)
+    // Yes. Add the offset to 'A' to get the correct letter.
+    return 'A' + i;
+
+  // Was it a digit?
+  if ((i - 26) < 10)
+    // Yes. Add the offset to '0' to get the correct digit.
+    return '0' + i - 26;
+
+  // It was not a letter or a digit, so it turns into... nothing!
+  return ' ';
+}
+int main ()
+{
+	int c;
+	string userinput;
+	cout<<"Enter 1 for text to morse. 2 for morse to text\n";
+	cout<<"Choice: ";
+	cin>>c;
+
+	while (c==1){
+		getline(cin, userinput);
+		string out="";
+		for(int i=0; i<userinput.length(); i++)
+		{
+			out+= texttomorse(userinput[i]);
+		}
+		cout<< out << endl;}
+
+	while (c==2){
+		getline(cin, userinput);
+		string out="";
+		for(int i=0; i<userinput.length(); i++)
+		{
+			out+= morsetotext(userinput[i]);
+		}
+		cout<< out << endl;}
+return 0;}

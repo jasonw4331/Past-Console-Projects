@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1420498403 source:c:\documents and settings\jason\desktop\c++\personal projects\shopping simulator for moms\main.cpp
+	<iostream>
+	<windows.h>
+	<cstdlib>
+

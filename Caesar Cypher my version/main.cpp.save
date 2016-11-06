@@ -1,0 +1,202 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+#include <ctype.h>
+#include <windows.h>
+#include <cstdlib>
+using namespace std;
+
+FILE *pin;
+int j;
+
+void encode(char message[], int shift)
+{
+    int i;
+    FILE *pout;
+    pout = fopen("OutputTrial_encode.txt", "w");
+    if (pout == NULL)
+    {
+        printf("File could not be opened for writing!\n");
+        exit(1);
+    }
+
+    for(i=0;i<strlen(message);i++)
+    {
+        if (!isalpha(message[i]))
+            continue;
+        // checking for upper case
+        if(isupper(message[i]))
+            message[i]=((message[i]-'A') + shift) % 26 + 'A';
+        else
+            //checking for lower case
+            if(islower(message[i]))
+                message[i]=((message[i]-'a') + shift) % 26 + 'a';
+    }
+
+    printf("\n%s\n", message);
+    fprintf(pout, "%s\n", message);
+    if (fclose(pout) != 0)
+        printf("Error in closing file!\n");
+}
+
+void decode(char message[], int shift)
+{
+    int i;
+    FILE *pout;
+
+    pout = fopen("OutputTrial_decode.txt", "w");
+    if (pout == NULL)
+    {
+        printf("File could not be opened for writing!\n");
+        exit(1);
+    }
+
+    for(i=0;i<strlen(message);i++)
+    {
+        if (!isalpha(message[i]))
+            continue;
+        // checking for upper case
+        if(isupper(message[i]))
+            message[i]=((message[i]-'A') + (26-shift)) % 26 + 'A';
+        else
+            //checking for lower case
+            if(islower(message[i]))
+                message[i]=((message[i]-'a') + (26-shift)) % 26 + 'a';
+    }
+
+    printf("\n%s\n", message);
+    fprintf(pout, "%s\n", message);
+    if (fclose(pout) != 0)
+        printf("Error in closing file!\n");
+}
+
+void decode2(char word[], int shift)
+{
+int i;
+FILE *pout;
+//printf("Enter shift amount (1-25): ");
+//scanf("%d", &shift);
+pout = fopen("Output_Textfile.txt", "w");
+
+if (pout == NULL)
+{
+printf("File could not be opened for writing!\n");
+exit(1);
+}
+
+for(i=0;i<strlen(word);i++)
+{
+if (!isalpha(word[i]))
+continue;
+// checking for upper case
+if(isupper(word[i]))
+word[i]=((word[i]-'A') + (26-shift)) % 26 + 'A';
+else
+//checking for lower case
+if(islower(word[i]))
+word[i]=((word[i]-'a') + (26-shift)) % 26 + 'a';
+}    while(!feof(pin))
+    {
+        char c;
+        c = (char) fgetc(pin);
+        if (EOF == c) {
+            break;
+        }
+        word[j] = c;
+        printf("%c", word[j]);
+        j++;
+    }
+    // We have already read all that we needed from the file, so let's
+    // close it now and not have it linger. Also, after closing, its
+    // file pointer can no longer be used; set it to NULL so that any
+    // inadvertent usage may be easier to detect.
+    fclose(pin); pin = NULL;
+
+    // We have to mark string end. C ends strings with zeroes, and a zero
+    // is a zero is a zero - we may indicate it in many equivalent ways:
+    // '\x00'    the character zero
+    // 0x0       zero in hexadecimal
+    // 0         zero as decimal integer
+    // To stress the point that this zero is part of a string, I use either
+    // 0x0 or '\x00'. But word[j] = 0 works just as well; it's a taste.
+    word[j] = '\x00';
+
+printf("\n%s\n", word);
+fprintf(pout, "%s\n", word);
+if (fclose(pout) != 0)
+printf("Error in closing file!\n");
+}
+
+
+int main()
+{
+    int shift, choice1, choice2;
+    char message[80];
+
+    printf("Selection: \n");
+    printf("1. Encode/Decode\n");
+    printf("2. Decode Textfile\n");
+    printf("User input: ");
+    scanf("%d", &choice1);
+    fflush(stdin);
+    system("cls");
+
+    if(choice1==1){
+        printf("\nEnter message to be encrypted: ");
+        gets(message);
+        printf("Enter shift amount (1-25): ");
+        scanf("%d", &shift);
+        fflush(stdin);
+        printf("\nSelection: \n");
+        printf("1. Encode\n");
+        printf("2. Decode\n");
+        printf("User input: ");
+        scanf("%d", &choice2);
+
+        switch(choice2)
+        {
+        case 1:
+            encode(message, shift);
+            break;
+        case 2:
+            decode(message, shift);
+            break;
+        default:
+            
+        }
+    }
+    else {
+        FILE *pin;
+        char filename[50], word[100];
+        int j=0;
+
+        do{
+            printf("\nEnter name of output file: ");
+            scanf("%30s", filename);
+            pin = fopen(filename, "r");
+        } while(pin == NULL);
+
+        if (pin == NULL)
+        {
+            printf("File could not be opened for reading!\n");
+            exit(1);
+        }
+        while(!feof(pin))
+        {
+
+            word[j] = (char) fgetc(pin);
+            printf("%c", word[j]);
+            if(feof(pin))
+                break;
+            j++;
+        }
+        printf("\nEnter shift amount (1-25): ");
+        scanf("%d", &shift);
+        decode2(word, shift);
+        fclose(pin);
+    }
+
+
+    printf("\n");
+    return 0;
+}

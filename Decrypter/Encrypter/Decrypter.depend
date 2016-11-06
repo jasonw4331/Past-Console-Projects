@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1412810546 source:c:\documents and settings\jason\desktop\c++\personal projects\decrypter\encrypter\main.cpp
+	<iostream>
+	<string>
+

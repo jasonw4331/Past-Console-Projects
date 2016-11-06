@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1415659062 source:c:\documents and settings\jason\desktop\c++\personal projects\maze\maze.cpp
+	"Maze.h"
+	<iostream>
+	<iomanip>
+	<cstdlib>
+
+1415658603 c:\documents and settings\jason\desktop\c++\personal projects\maze\maze.h
+	<fstream>
+	<vector>
+
+1415659042 source:c:\documents and settings\jason\desktop\c++\personal projects\maze\testmaze.cpp
+	"Maze.h"
+	<iostream>
+	<cstdlib>
+

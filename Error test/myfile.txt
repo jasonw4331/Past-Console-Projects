@@ -1,0 +1,3 @@
+No. 	Name 	Roll No. 	Physic 	Math 	Compuer Science 	Islamiyat 	Pak Studies 	Average 	Grade  
+1 	Student Name 	12345 	50 	60 	70 	76 	90 	81 	A 
+2 	Student Name 	12345 	55 	52 	50 	80 	58 	55 	C 

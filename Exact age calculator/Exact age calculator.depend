@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1408382950 source:c:\documents and settings\jason\desktop\c++\personal projects\exact age calculator\main.cpp
+	<iostream>
+	<cstdlib>
+	<time.h>
+	<complex>
+

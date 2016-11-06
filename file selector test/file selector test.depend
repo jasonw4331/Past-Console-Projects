@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1409697688 source:c:\documents and settings\jason\desktop\c++\personal projects\file selector test\main.cpp
+	<windows.h>
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+

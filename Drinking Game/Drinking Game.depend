@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1408061255 source:c:\documents and settings\jason\desktop\c++\personal projects\drinking game\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<windows.h>
+

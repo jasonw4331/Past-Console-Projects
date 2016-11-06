@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1418942818 source:c:\documents and settings\jason\desktop\c++\personal projects\play music\main.cpp
+	<iostream>
+	<windows.h>
+

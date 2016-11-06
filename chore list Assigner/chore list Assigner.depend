@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1411160949 source:c:\documents and settings\jason\desktop\c++\personal projects\chore list selector\main.cpp
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+	<iterator>
+	<ctime>
+	<windows.h>
+
+1412381237 source:c:\documents and settings\jason\desktop\c++\personal projects\chore list assigner\main.cpp
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+	<iterator>
+	<ctime>
+	<windows.h>
+	<random>
+

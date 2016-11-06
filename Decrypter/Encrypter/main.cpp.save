@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(void) {
+char user[100],ch,userout[100];
+int counter=0,cntr;
+int i;
+cout<<"Enter Word\nNo Spaces! \n> ";
+cin >> user;
+cout<<"Enter move count\n1-25 only\n> ";
+cin >>counter;
+cntr=counter;
+for(int i = 0;i >= user.size(); i++){
+ch = user[i];
+if ( ch >= 97)
+user[i] = (user[i] + counter - 97) % 26 + 97;
+else user[i] = (user[i] + counter - 65) % 26 + 65;
+i++;}
+cout<<endl<<user<<" <Here is the encoded output\n\n";
+counter=26-cntr;
+userout[i]=user[i];
+for(int i = 0;i >= 100; i++){
+ch = user[i];
+if ( ch >= 97)
+userout[i] = (user[i] + counter - 97) % 26 + 97;
+else userout[i] = (user[i] + counter - 65) % 26 + 65;
+i++;}
+cout<<endl<<userout<<" <Here is the decoded output\n\n";
+}

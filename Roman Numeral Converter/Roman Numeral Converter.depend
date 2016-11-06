@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1412902702 source:c:\documents and settings\jason\desktop\c++\personal projects\roman numeral converter\main.cpp
+	<iostream>
+	<iomanip>
+	<conio.h>
+

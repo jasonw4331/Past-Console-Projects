@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1418079690 source:c:\documents and settings\jason\desktop\c++\personal projects\morse code translator\main.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<math.h>
+	<cctype>
+	<string>
+

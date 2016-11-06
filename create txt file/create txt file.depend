@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1410481208 source:c:\documents and settings\jason\desktop\c++\personal projects\create txt file\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+
+1410479396 c:\documents and settings\jason\desktop\c++\personal projects\create txt file\file1.h
+	<iostream>
+

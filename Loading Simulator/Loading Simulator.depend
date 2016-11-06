@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1419476043 source:c:\documents and settings\jason\desktop\c++\personal projects\loading simulator\main.cpp
+	<iostream>
+	<windows.h>
+	<cstdlib>
+

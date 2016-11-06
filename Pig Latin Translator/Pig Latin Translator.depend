@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1416185965 source:c:\documents and settings\jason\desktop\c++\personal projects\pig latin translator\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<algorithm>
+	<cctype>
+

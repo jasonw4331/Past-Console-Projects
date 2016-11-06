@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1408103201 source:c:\documents and settings\jason\desktop\c++\personal projects\system() test\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+

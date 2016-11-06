@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1410722260 source:c:\documents and settings\jason\desktop\c++\personal projects\tic-tac-toe\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<string>
+	<time.h>
+	<windows.h>
+

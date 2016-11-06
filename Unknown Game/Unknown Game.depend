@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1410710940 source:c:\documents and settings\jason\desktop\c++\personal projects\unknown game\main.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+	<stdlib.h>
+	<windows.h>
+	"enemy.cpp"
+	"weapon.cpp"
+	"armor.cpp"
+	"material.cpp"
+
+1410710655 c:\documents and settings\jason\desktop\c++\personal projects\unknown game\enemy.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+	<stdlib.h>
+
+1410710671 c:\documents and settings\jason\desktop\c++\personal projects\unknown game\weapon.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+	<stdlib.h>
+
+1410710687 c:\documents and settings\jason\desktop\c++\personal projects\unknown game\armor.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+	<stdlib.h>
+
+1410710715 c:\documents and settings\jason\desktop\c++\personal projects\unknown game\material.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+	<stdlib.h>
+

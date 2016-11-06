@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1416883021 source:c:\documents and settings\jason\desktop\c++\personal projects\algebraic expression creator\main.cpp
+	<iostream>
+	<windows.h>
+

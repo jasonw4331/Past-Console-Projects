@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1418343694 source:c:\documents and settings\jason\desktop\c++\personal projects\coin toss\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<ctime>
+

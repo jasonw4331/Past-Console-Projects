@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1408049648 source:c:\documents and settings\jason\desktop\c++\personal projects\battle of the gods\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<cstdlib>
+

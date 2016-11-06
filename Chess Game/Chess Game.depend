@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1411606008 source:c:\documents and settings\jason\desktop\c++\personal projects\chess game\main.cpp
+	<iostream>
+	<string.h>
+	<windows.h>
+
+1411502819 source:c:\documents and settings\jason\desktop\c++\personal projects\chess game\backup of main.cpp
+	<iostream>
+	<string.h>
+	<windows.h>
+

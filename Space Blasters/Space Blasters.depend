@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1411087183 source:c:\documents and settings\jason\desktop\c++\personal projects\console game\main.cpp
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<ctime>
+	<vector>
+
