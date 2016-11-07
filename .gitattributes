@@ -8,7 +8,7 @@
 *.h text
 *.h++ text
 *.hh text
-*.save text
+*.save cpp
 
 # Compiled Object files
 *.slo binary
